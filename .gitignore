@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.npm-cache/
+.npmrc
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+
+# Local prototype and design-QA evidence
+/AGENTS.md
+/design-qa.md
+/*.png
+/*.jpg
+/*.jpeg
