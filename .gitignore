@@ -12,6 +12,7 @@ dist/
 # Local prototype and design-QA evidence
 /AGENTS.md
 /design-qa.md
+/qa-artifacts/
 /*.png
 /*.jpg
 /*.jpeg

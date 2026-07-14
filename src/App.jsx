@@ -1,5 +1,8 @@
 import { useMemo, useState } from "react";
 
+import xuanjiMark from "./assets/xuanji-mark.png";
+import xuanjiMiniProgram from "./assets/xuanji-mini-program.jpg";
+import xuanjiWordmark from "./assets/xuanji-wordmark.png";
 import { MarketContextPanel } from "./MarketContextPanel.jsx";
 import { ScatterChart } from "./ScatterChart.jsx";
 import { report, samples } from "./data.js";
@@ -27,9 +30,12 @@ export function App() {
     <div className="site-shell">
       <header className="masthead">
         <div className="page nav-row" aria-label="网站信息">
-          <a className="wordmark" href="#top" aria-label="返回顶部">
-            <span>MARKET TRACE</span>
-            <small>市场样本观察</small>
+          <a className="wordmark" href="#top" aria-label="玄玑 Market Trace，返回顶部">
+            <img className="wordmark-logo" src={xuanjiWordmark} alt="玄玑" />
+            <span className="wordmark-copy">
+              <strong>MARKET TRACE</strong>
+              <small>市场样本观察</small>
+            </span>
           </a>
           <span className="updated">数据更新 · {report.updatedAt.replaceAll("-", ".")}</span>
         </div>
@@ -136,6 +142,16 @@ export function App() {
                 <a href="https://tushare.pro/document/2?doc_id=26" target="_blank" rel="noreferrer">交易日历</a>
                 <a href="https://tushare.pro/document/2?doc_id=95" target="_blank" rel="noreferrer">指数日线</a>
               </div>
+
+              <aside className="xuanji-entry" aria-labelledby="xuanji-entry-title">
+                <div className="xuanji-entry-copy">
+                  <img src={xuanjiWordmark} alt="玄玑" />
+                  <h3 id="xuanji-entry-title">把市场样本观察带在身边</h3>
+                  <p>微信扫码进入玄玑小程序，查看更多市场研究与跟踪内容。</p>
+                  <span>微信小程序</span>
+                </div>
+                <img className="xuanji-qr" src={xuanjiMiniProgram} alt="玄玑微信小程序码" />
+              </aside>
             </div>
           </div>
         </section>
@@ -143,7 +159,10 @@ export function App() {
 
       <footer className="page footer">
         <p>本页面仅用于历史样本研究与数据展示，不构成任何投资建议。</p>
-        <p>MARKET TRACE · {report.updatedAt.slice(0, 4)}</p>
+        <div className="footer-brand">
+          <img src={xuanjiMark} alt="" />
+          <span>玄玑 · MARKET TRACE · {report.updatedAt.slice(0, 4)}</span>
+        </div>
       </footer>
     </div>
   );

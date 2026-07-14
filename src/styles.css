@@ -53,14 +53,22 @@ a { color: inherit; }
 
 .wordmark {
   display: inline-flex;
-  align-items: baseline;
-  gap: 10px;
+  align-items: center;
+  gap: 16px;
   color: #fff;
   text-decoration: none;
 }
 
-.wordmark span { font-size: 13px; font-weight: 750; letter-spacing: 0.15em; }
-.wordmark small { color: #9eabb9; font-size: 12px; }
+.wordmark-logo { display: block; width: 92px; height: auto; }
+.wordmark-copy {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 9px;
+  padding-left: 16px;
+  border-left: 1px solid rgba(190, 160, 106, 0.4);
+}
+.wordmark-copy strong { font-size: 12px; font-weight: 750; letter-spacing: 0.14em; }
+.wordmark-copy small { color: #9eabb9; font-size: 12px; }
 .updated { color: #9eabb9; font-size: 12px; letter-spacing: 0.04em; }
 
 .hero {
@@ -401,7 +409,37 @@ a { color: inherit; }
 .source-links a { color: var(--ink); text-underline-offset: 4px; }
 .source-links a:hover { color: #1376cf; }
 
-.footer { display: flex; justify-content: space-between; gap: 30px; padding-block: 34px 46px; color: var(--muted); font-size: 12px; }
+.xuanji-entry {
+  display: grid;
+  grid-template-columns: 1fr 176px;
+  gap: 40px;
+  align-items: center;
+  margin-top: 38px;
+  padding-top: 38px;
+  border-top: 1px solid #ccd6df;
+}
+
+.xuanji-entry-copy > img { display: block; width: 106px; height: auto; margin-bottom: 22px; }
+.xuanji-entry h3 { margin: 0; color: var(--ink); font-size: 21px; letter-spacing: -0.02em; }
+.xuanji-entry-copy p { max-width: 360px; margin: 12px 0 16px; }
+.xuanji-entry-copy > span {
+  color: #8d754c;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+}
+.xuanji-qr {
+  display: block;
+  width: 176px;
+  height: auto;
+  border: 1px solid #d4dce4;
+  background: #fff;
+}
+
+.footer { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding-block: 34px 46px; color: var(--muted); font-size: 12px; }
+.footer p { margin: 0; }
+.footer-brand { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
+.footer-brand img { display: block; width: 30px; height: 30px; }
 
 @media (max-width: 900px) {
   .stats-row { grid-template-columns: 1fr; }
@@ -418,7 +456,11 @@ a { color: inherit; }
 @media (max-width: 640px) {
   .page { width: min(100% - 32px, 1180px); }
   .nav-row { min-height: 66px; }
-  .wordmark small { display: none; }
+  .wordmark { gap: 0; }
+  .wordmark-logo { width: 82px; }
+  .wordmark-copy { margin-left: 12px; padding-left: 12px; }
+  .wordmark-copy small { display: none; }
+  .wordmark-copy strong { font-size: 10px; }
   .updated { font-size: 11px; }
   .hero { padding-block: 62px 68px; }
   .hero h1 { font-size: clamp(32px, 9vw, 40px); }
@@ -446,8 +488,16 @@ a { color: inherit; }
   .finding-list p { grid-column: 2; }
   .method-section { padding-block: 72px; }
   .method-grid { gap: 34px; }
+  .xuanji-entry { grid-template-columns: 1fr; gap: 26px; margin-top: 32px; padding-top: 32px; }
+  .xuanji-entry-copy > img { margin-bottom: 18px; }
+  .xuanji-qr { width: min(190px, 62vw); }
   .footer { flex-direction: column; gap: 8px; }
-  .footer p { margin: 0; }
+  .footer { align-items: flex-start; }
+  .footer-brand { white-space: normal; }
+}
+
+@media (max-width: 480px) {
+  .wordmark-copy { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
