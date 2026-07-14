@@ -69,3 +69,32 @@ export function denseRankByTouchTime(rows) {
     daily_candidate_count: sorted.length,
   }));
 }
+
+const round = (value, digits) => {
+  const multiplier = 10 ** digits;
+  return Math.round(Number(value) * multiplier) / multiplier;
+};
+
+export function toSiteSample(record) {
+  return {
+    d: record.trigger_date,
+    c: record.ts_code,
+    n: record.name,
+    s: record.limit_status,
+    t: record.first_touch_time,
+    x: record.first_touch_seconds,
+    r: record.touch_rank,
+    a: round(record.turnover_yi, 1),
+    p: round(record.next_open_premium, 6),
+  };
+}
+
+export function buildIndexByDate(records, definitions) {
+  return Object.fromEntries(records.map((record) => [
+    record.trigger_date,
+    Object.fromEntries(definitions.map((definition) => [
+      definition.code,
+      Number(record[definition.field]),
+    ])),
+  ]));
+}

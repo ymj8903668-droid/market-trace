@@ -2,9 +2,11 @@ import test from "node:test";
 import assert from "node:assert/strict";
 
 import {
+  buildIndexByDate,
   buildMonthChunks,
   denseRankByTouchTime,
   resolveSnapshotDates,
+  toSiteSample,
 } from "./market-data-core.mjs";
 
 test("resolveSnapshotDates keeps only trigger days with a known next-session open", () => {
@@ -45,4 +47,44 @@ test("denseRankByTouchTime gives same-second touches the same rank", () => {
     { ts_code: "C", touch_rank: 2 },
   ]);
   assert.ok(ranked.every((row) => row.daily_candidate_count === 3));
+});
+
+test("toSiteSample emits the compact, chart-ready contract", () => {
+  assert.deepEqual(toSiteSample({
+    trigger_date: "2026-07-13",
+    ts_code: "000001.SZ",
+    name: "示例股票",
+    limit_status: "涨停收盘",
+    first_touch_time: "10:02:03",
+    first_touch_seconds: 36123,
+    touch_rank: 2,
+    turnover_yi: 123.456,
+    next_open_premium: 0.0123456,
+  }), {
+    d: "2026-07-13",
+    c: "000001.SZ",
+    n: "示例股票",
+    s: "涨停收盘",
+    t: "10:02:03",
+    x: 36123,
+    r: 2,
+    a: 123.5,
+    p: 0.012346,
+  });
+});
+
+test("buildIndexByDate keeps every selected benchmark on each trigger date", () => {
+  const definitions = [
+    { code: "000300.SH", field: "index_hs300_pct_chg" },
+    { code: "000001.SH", field: "index_sse_pct_chg" },
+  ];
+  const records = [{
+    trigger_date: "2026-07-13",
+    index_hs300_pct_chg: 0.01,
+    index_sse_pct_chg: -0.02,
+  }];
+
+  assert.deepEqual(buildIndexByDate(records, definitions), {
+    "2026-07-13": { "000300.SH": 0.01, "000001.SH": -0.02 },
+  });
 });
