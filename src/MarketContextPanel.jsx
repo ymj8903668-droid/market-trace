@@ -1,6 +1,8 @@
 import { indexDefinitions } from "./indexData.js";
 
-const percent = (value) => `${value >= 0 ? "+" : ""}${(value * 100).toFixed(2)}%`;
+const percent = (value) => Number.isFinite(value)
+  ? `${value >= 0 ? "+" : ""}${(value * 100).toFixed(2)}%`
+  : "—";
 
 export function MarketContextPanel({ selectedCode, summary, onChange }) {
   const selected = indexDefinitions.find((definition) => definition.code === selectedCode) || indexDefinitions[0];

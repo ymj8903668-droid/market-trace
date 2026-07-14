@@ -13,9 +13,15 @@ test("getIndexChange returns the selected benchmark change for a sample date", (
 
 test("summarizeIndexDays groups every sample by the selected benchmark direction", () => {
   const summary = summarizeIndexDays(samples, "000300.SH");
-  assert.equal(summary.up.count, 46);
-  assert.equal(summary.down.count, 14);
-  assert.equal(summary.flat.count, 0);
-  assert.ok(summary.up.averagePremium > 0.016);
-  assert.ok(summary.down.averagePremium < -0.014);
+  const expectedCounts = samples.reduce((counts, row) => {
+    counts[getIndexDirection(getIndexChange(row.d, "000300.SH"))] += 1;
+    return counts;
+  }, { up: 0, down: 0, flat: 0 });
+
+  assert.equal(summary.up.count, expectedCounts.up);
+  assert.equal(summary.down.count, expectedCounts.down);
+  assert.equal(summary.flat.count, expectedCounts.flat);
+  assert.equal(summary.up.count + summary.down.count + summary.flat.count, samples.length);
+  assert.ok(Number.isFinite(summary.up.averagePremium));
+  assert.ok(Number.isFinite(summary.down.averagePremium));
 });

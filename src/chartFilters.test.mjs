@@ -20,7 +20,7 @@ test("turning off broken samples keeps only limit-up closes", () => {
     INDEX_CODE,
   );
 
-  assert.equal(visible.length, 34);
+  assert.equal(visible.length, samples.filter((row) => row.s === "涨停收盘").length);
   assert.ok(visible.every((row) => row.s === "涨停收盘"));
 });
 

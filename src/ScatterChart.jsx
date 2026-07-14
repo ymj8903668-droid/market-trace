@@ -1,12 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { defaultChartFilters, filterSamples } from "./chartFilters.js";
-import { samples } from "./data.js";
 import { getIndexChange, getIndexDirection } from "./marketContext.js";
 
 const X_MIN = 33900;
 const X_MAX = 53700;
-const Y_MIN = -0.09;
-const Y_MAX = 0.11;
 
 const percent = (value, digits = 2) => `${value >= 0 ? "+" : ""}${(value * 100).toFixed(digits)}%`;
 const rankLabel = (rank) => (rank === 1 ? "第1个" : rank === 2 ? "第2个" : `第${rank}个`);
@@ -60,7 +57,7 @@ function LegendToggle({ id, checked, onChange, icon, children }) {
   );
 }
 
-export function ScatterChart({ selectedIndex }) {
+export function ScatterChart({ samples, selectedIndex }) {
   const containerRef = useRef(null);
   const [width, setWidth] = useState(900);
   const [active, setActive] = useState(null);
@@ -78,7 +75,7 @@ export function ScatterChart({ selectedIndex }) {
 
   useEffect(() => {
     setActive(null);
-  }, [filters, selectedIndex.code]);
+  }, [filters, samples, selectedIndex.code]);
 
   const visibleSamples = useMemo(
     () => filterSamples(samples, filters, selectedIndex.code),
@@ -95,11 +92,18 @@ export function ScatterChart({ selectedIndex }) {
   const margin = { top: 22, right: compact ? 14 : 22, bottom: 58, left: compact ? 48 : 66 };
   const plotWidth = width - margin.left - margin.right;
   const plotHeight = height - margin.top - margin.bottom;
+  const premiumMagnitude = Math.max(
+    0.1,
+    Math.ceil(Math.max(...samples.map((row) => Math.abs(row.p)), 0) / 0.05) * 0.05,
+  );
+  const yMin = -premiumMagnitude;
+  const yMax = premiumMagnitude;
+  const maxTurnover = Math.max(...samples.map((row) => row.a), 100);
   const sx = (value) => margin.left + ((value - X_MIN) / (X_MAX - X_MIN)) * plotWidth;
-  const sy = (value) => margin.top + ((Y_MAX - value) / (Y_MAX - Y_MIN)) * plotHeight;
-  const radius = (amount) => 4 + Math.sqrt(Math.max(0, (amount - 100) / (446 - 100))) * (compact ? 5.5 : 7);
+  const sy = (value) => margin.top + ((yMax - value) / (yMax - yMin)) * plotHeight;
+  const radius = (amount) => 4 + Math.sqrt(Math.max(0, (amount - 100) / Math.max(1, maxTurnover - 100))) * (compact ? 5.5 : 7);
   const xTicks = compact ? [33900, 39600, 46800, 50400, 53700] : [33900, 36000, 39600, 46800, 50400, 53700];
-  const yTicks = [-0.08, -0.04, 0, 0.04, 0.08];
+  const yTicks = [-premiumMagnitude, -premiumMagnitude / 2, 0, premiumMagnitude / 2, premiumMagnitude];
   const highLow = useMemo(() => {
     if (!visibleSamples.length) return [];
     const high = visibleSamples.reduce((best, row) => (row.p > best.p ? row : best));
