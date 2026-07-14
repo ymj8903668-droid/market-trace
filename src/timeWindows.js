@@ -66,6 +66,8 @@ export function summarizeSamples(rows) {
     averagePremium: rows.length ? round(rows.reduce((total, row) => total + row.p, 0) / rows.length) : null,
     positiveRate: rows.length ? round(rows.filter((row) => row.p > 0).length / rows.length) : null,
     averageTurnover: rows.length ? round(rows.reduce((total, row) => total + row.a, 0) / rows.length) : null,
+    minimumPremium: rows.length ? Math.min(...rows.map((row) => row.p)) : null,
+    maximumPremium: rows.length ? Math.max(...rows.map((row) => row.p)) : null,
     closed: summarizeGroup(rows.filter((row) => row.s === "涨停收盘")),
     broken: summarizeGroup(rows.filter((row) => row.s === "炸板")),
     ranks,

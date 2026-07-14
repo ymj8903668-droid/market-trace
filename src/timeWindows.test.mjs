@@ -58,6 +58,8 @@ test("summarizeSamples recomputes every metric for the selected window", () => {
   assert.equal(summary.averagePremium, 0.005);
   assert.equal(summary.positiveRate, 0.5);
   assert.equal(summary.averageTurnover, 190);
+  assert.equal(summary.minimumPremium, -0.02);
+  assert.equal(summary.maximumPremium, 0.03);
   assert.deepEqual(summary.closed, { count: 1, averagePremium: 0.03, positiveRate: 1 });
   assert.deepEqual(summary.broken, { count: 1, averagePremium: -0.02, positiveRate: 0 });
   assert.deepEqual(summary.ranks.map(({ label, count }) => ({ label, count })), [
@@ -73,6 +75,8 @@ test("summarizeSamples returns null averages instead of NaN for an empty window"
   assert.equal(summary.records, 0);
   assert.equal(summary.averagePremium, null);
   assert.equal(summary.averageTurnover, null);
+  assert.equal(summary.minimumPremium, null);
+  assert.equal(summary.maximumPremium, null);
   assert.equal(summary.closed.averagePremium, null);
   assert.equal(summary.ranks[0].averagePremium, null);
 });

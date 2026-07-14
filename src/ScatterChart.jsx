@@ -3,7 +3,7 @@ import { defaultChartFilters, filterSamples } from "./chartFilters.js";
 import { getIndexChange, getIndexDirection } from "./marketContext.js";
 
 const X_MIN = 33900;
-const X_MAX = 53700;
+const X_MAX = 54000;
 
 const percent = (value, digits = 2) => `${value >= 0 ? "+" : ""}${(value * 100).toFixed(digits)}%`;
 const rankLabel = (rank) => (rank === 1 ? "第1个" : rank === 2 ? "第2个" : `第${rank}个`);
@@ -79,7 +79,7 @@ export function ScatterChart({ samples, selectedIndex }) {
 
   const visibleSamples = useMemo(
     () => filterSamples(samples, filters, selectedIndex.code),
-    [filters, selectedIndex.code],
+    [filters, samples, selectedIndex.code],
   );
   const allFiltersSelected = Object.values(filters).every(Boolean);
   const currentAverage = useMemo(() => {
@@ -102,7 +102,7 @@ export function ScatterChart({ samples, selectedIndex }) {
   const sx = (value) => margin.left + ((value - X_MIN) / (X_MAX - X_MIN)) * plotWidth;
   const sy = (value) => margin.top + ((yMax - value) / (yMax - yMin)) * plotHeight;
   const radius = (amount) => 4 + Math.sqrt(Math.max(0, (amount - 100) / Math.max(1, maxTurnover - 100))) * (compact ? 5.5 : 7);
-  const xTicks = compact ? [33900, 39600, 46800, 50400, 53700] : [33900, 36000, 39600, 46800, 50400, 53700];
+  const xTicks = compact ? [33900, 39600, 46800, 50400, 54000] : [33900, 36000, 39600, 46800, 50400, 54000];
   const yTicks = [-premiumMagnitude, -premiumMagnitude / 2, 0, premiumMagnitude / 2, premiumMagnitude];
   const highLow = useMemo(() => {
     if (!visibleSamples.length) return [];

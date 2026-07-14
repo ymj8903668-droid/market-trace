@@ -139,7 +139,13 @@ const candidates = limitRows
   });
 
 const rankedCandidates = [];
-const candidatesByDate = Map.groupBy(candidates, (row) => String(row.trade_date));
+const candidatesByDate = new Map();
+for (const row of candidates) {
+  const tradeDate = String(row.trade_date);
+  const rows = candidatesByDate.get(tradeDate) || [];
+  rows.push(row);
+  candidatesByDate.set(tradeDate, rows);
+}
 for (const rows of candidatesByDate.values()) rankedCandidates.push(...denseRankByTouchTime(rows));
 
 const dailyDates = [...new Set(rankedCandidates.flatMap((row) => [

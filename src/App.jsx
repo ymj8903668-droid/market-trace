@@ -139,7 +139,7 @@ export function App() {
         <section className="page findings" aria-labelledby="findings-title">
           <div className="findings-heading">
             <p className="section-kicker">关键观察</p>
-            <h2 id="findings-title">封住涨停，比触板早晚更有区分度</h2>
+            <h2 id="findings-title">从封板结果、市场环境与触板顺序观察</h2>
           </div>
           <div className="finding-list">
             <article>
@@ -154,13 +154,13 @@ export function App() {
             </article>
             <article>
               <span>03</span>
-              <h3>首个触板略占优势</h3>
+              <h3>首二触板表现对比</h3>
               <p>同日第 1 个触板样本次日平均溢价 {percent(report.ranks[0].averagePremium)}，第 2 个为 {percent(report.ranks[1].averagePremium)}。</p>
             </article>
             <article>
               <span>04</span>
               <h3>分布离散，需结合个股</h3>
-              <p>样本极值从 −7.73% 到 +9.99%，单一触板时间不能替代题材、情绪与封单质量判断。</p>
+              <p>当前窗口样本极值从 {percent(report.minimumPremium)} 到 {percent(report.maximumPremium)}，单一触板时间不能替代题材、情绪与封单质量判断。</p>
             </article>
           </div>
         </section>
