@@ -2,10 +2,10 @@ export const dataMetadata = {
   "schema": "market-trace-v2",
   "timezone": "Asia/Shanghai",
   "dataStart": "2026-01-01",
-  "triggerEnd": "2026-07-14",
-  "updatedAt": "2026-07-15",
-  "recordCount": 218,
-  "tradeDayCount": 86,
+  "triggerEnd": "2026-07-15",
+  "updatedAt": "2026-07-16",
+  "recordCount": 219,
+  "tradeDayCount": 87,
   "thresholdYuan": 10000000000,
   "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
   "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -2415,5 +2415,16 @@ export const samples = [
     "r": 4,
     "a": 124,
     "p": 0.008804
+  },
+  {
+    "d": "2026-07-15",
+    "c": "601869.SH",
+    "n": "长飞光纤",
+    "s": "炸板",
+    "t": "09:46:21",
+    "x": 35181,
+    "r": 1,
+    "a": 104.9,
+    "p": -0.080503
   }
 ];

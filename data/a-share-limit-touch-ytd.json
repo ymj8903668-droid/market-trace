@@ -3,10 +3,10 @@
     "schema": "market-trace-v2",
     "timezone": "Asia/Shanghai",
     "dataStart": "2026-01-01",
-    "triggerEnd": "2026-07-14",
-    "updatedAt": "2026-07-15",
-    "recordCount": 218,
-    "tradeDayCount": 86,
+    "triggerEnd": "2026-07-15",
+    "updatedAt": "2026-07-16",
+    "recordCount": 219,
+    "tradeDayCount": 87,
     "thresholdYuan": 10000000000,
     "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
     "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -11135,6 +11135,57 @@
       "index_hs300_pct_chg": 0.021536,
       "index_sse_pct_chg": 0.013627,
       "index_csi1000_pct_chg": 0.017626
+    },
+    {
+      "trigger_date": "2026-07-15",
+      "ts_code": "601869.SH",
+      "name": "长飞光纤",
+      "industry": "通信设备",
+      "limit_status": "炸板",
+      "first_touch_time": "09:46:21",
+      "first_touch_seconds": 35181,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 1,
+      "turnover_yuan": 10494957056,
+      "turnover_yi": 104.94957056,
+      "daily_turnover_yuan": 10494956933,
+      "turnover_source_delta_yuan": 123,
+      "turnover_check_pass": true,
+      "trigger_close": 425.45,
+      "trigger_pct_chg": 6.31,
+      "turnover_ratio": 5.95,
+      "last_touch_time": null,
+      "open_times": 2,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-07-16",
+      "next_open": 391.2,
+      "next_pre_close": 425.45,
+      "next_open_premium": -0.08050299682688922,
+      "source_limit_ref": "tushare:limit_list_d#601869.SH/20260715",
+      "source_trigger_daily_ref": "tushare:daily#601869.SH/20260715",
+      "source_next_daily_ref": "tushare:daily#601869.SH/20260716",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4786.7828,
+          "pct_chg": -0.002026
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3955.5781,
+          "pct_chg": -0.0029110000000000004
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7817.8313,
+          "pct_chg": -0.013538
+        }
+      },
+      "index_hs300_pct_chg": -0.002026,
+      "index_sse_pct_chg": -0.0029110000000000004,
+      "index_csi1000_pct_chg": -0.013538
     }
   ]
 }
