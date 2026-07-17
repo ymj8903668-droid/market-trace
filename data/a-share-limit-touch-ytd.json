@@ -3,10 +3,10 @@
     "schema": "market-trace-v2",
     "timezone": "Asia/Shanghai",
     "dataStart": "2026-01-01",
-    "triggerEnd": "2026-07-15",
-    "updatedAt": "2026-07-16",
-    "recordCount": 219,
-    "tradeDayCount": 87,
+    "triggerEnd": "2026-07-16",
+    "updatedAt": "2026-07-17",
+    "recordCount": 220,
+    "tradeDayCount": 88,
     "thresholdYuan": 10000000000,
     "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
     "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -11186,6 +11186,57 @@
       "index_hs300_pct_chg": -0.002026,
       "index_sse_pct_chg": -0.0029110000000000004,
       "index_csi1000_pct_chg": -0.013538
+    },
+    {
+      "trigger_date": "2026-07-16",
+      "ts_code": "000938.SZ",
+      "name": "紫光股份",
+      "industry": "IT服务Ⅱ",
+      "limit_status": "炸板",
+      "first_touch_time": "10:12:36",
+      "first_touch_seconds": 36756,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 1,
+      "turnover_yuan": 17116810240,
+      "turnover_yi": 171.1681024,
+      "daily_turnover_yuan": 17116810187.800001,
+      "turnover_source_delta_yuan": 52.19999885559082,
+      "turnover_check_pass": true,
+      "trigger_close": 38.59,
+      "trigger_pct_chg": 8.61,
+      "turnover_ratio": 15.8,
+      "last_touch_time": null,
+      "open_times": 2,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-07-17",
+      "next_open": 37.49,
+      "next_pre_close": 38.59,
+      "next_open_premium": -0.028504793988079813,
+      "source_limit_ref": "tushare:limit_list_d#000938.SZ/20260716",
+      "source_trigger_daily_ref": "tushare:daily#000938.SZ/20260716",
+      "source_next_daily_ref": "tushare:daily#000938.SZ/20260717",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4698.4344,
+          "pct_chg": -0.018456999999999998
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3882.4126,
+          "pct_chg": -0.018497
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7631.7622,
+          "pct_chg": -0.023801000000000003
+        }
+      },
+      "index_hs300_pct_chg": -0.018456999999999998,
+      "index_sse_pct_chg": -0.018497,
+      "index_csi1000_pct_chg": -0.023801000000000003
     }
   ]
 }

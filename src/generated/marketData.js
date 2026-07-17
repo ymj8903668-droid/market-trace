@@ -2,10 +2,10 @@ export const dataMetadata = {
   "schema": "market-trace-v2",
   "timezone": "Asia/Shanghai",
   "dataStart": "2026-01-01",
-  "triggerEnd": "2026-07-15",
-  "updatedAt": "2026-07-16",
-  "recordCount": 219,
-  "tradeDayCount": 87,
+  "triggerEnd": "2026-07-16",
+  "updatedAt": "2026-07-17",
+  "recordCount": 220,
+  "tradeDayCount": 88,
   "thresholdYuan": 10000000000,
   "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
   "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -2426,5 +2426,16 @@ export const samples = [
     "r": 1,
     "a": 104.9,
     "p": -0.080503
+  },
+  {
+    "d": "2026-07-16",
+    "c": "000938.SZ",
+    "n": "紫光股份",
+    "s": "炸板",
+    "t": "10:12:36",
+    "x": 36756,
+    "r": 1,
+    "a": 171.2,
+    "p": -0.028505
   }
 ];
