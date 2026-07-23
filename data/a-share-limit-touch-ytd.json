@@ -3,10 +3,10 @@
     "schema": "market-trace-v2",
     "timezone": "Asia/Shanghai",
     "dataStart": "2026-01-01",
-    "triggerEnd": "2026-07-21",
-    "updatedAt": "2026-07-22",
-    "recordCount": 231,
-    "tradeDayCount": 90,
+    "triggerEnd": "2026-07-22",
+    "updatedAt": "2026-07-23",
+    "recordCount": 234,
+    "tradeDayCount": 91,
     "thresholdYuan": 10000000000,
     "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
     "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -11798,6 +11798,159 @@
       "index_hs300_pct_chg": 0.030642999999999997,
       "index_sse_pct_chg": 0.017935,
       "index_csi1000_pct_chg": 0.042279
+    },
+    {
+      "trigger_date": "2026-07-22",
+      "ts_code": "002156.SZ",
+      "name": "通富微电",
+      "industry": "半导体",
+      "limit_status": "炸板",
+      "first_touch_time": "09:37:42",
+      "first_touch_seconds": 34662,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 3,
+      "turnover_yuan": 18636008960,
+      "turnover_yi": 186.3600896,
+      "daily_turnover_yuan": 18636008850.8,
+      "turnover_source_delta_yuan": 109.20000076293945,
+      "turnover_check_pass": true,
+      "trigger_close": 74.9,
+      "trigger_pct_chg": 8.08,
+      "turnover_ratio": 16.34,
+      "last_touch_time": null,
+      "open_times": 8,
+      "up_stat": "1/2",
+      "limit_times": null,
+      "next_trade_date": "2026-07-23",
+      "next_open": 75.99,
+      "next_pre_close": 74.9,
+      "next_open_premium": 0.014552736982643477,
+      "source_limit_ref": "tushare:limit_list_d#002156.SZ/20260722",
+      "source_trigger_daily_ref": "tushare:daily#002156.SZ/20260722",
+      "source_next_daily_ref": "tushare:daily#002156.SZ/20260723",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4717.2442,
+          "pct_chg": -0.004639
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3867.0336,
+          "pct_chg": 0.0006900000000000001
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7158.7622,
+          "pct_chg": -0.013926000000000001
+        }
+      },
+      "index_hs300_pct_chg": -0.004639,
+      "index_sse_pct_chg": 0.0006900000000000001,
+      "index_csi1000_pct_chg": -0.013926000000000001
+    },
+    {
+      "trigger_date": "2026-07-22",
+      "ts_code": "000938.SZ",
+      "name": "紫光股份",
+      "industry": "IT服务Ⅱ",
+      "limit_status": "炸板",
+      "first_touch_time": "09:48:48",
+      "first_touch_seconds": 35328,
+      "touch_rank": 2,
+      "touch_rank_label": "第2个",
+      "daily_candidate_count": 3,
+      "turnover_yuan": 24152339200,
+      "turnover_yi": 241.523392,
+      "daily_turnover_yuan": 24152339103.7,
+      "turnover_source_delta_yuan": 96.29999923706055,
+      "turnover_check_pass": true,
+      "trigger_close": 44.9,
+      "trigger_pct_chg": 8.3,
+      "turnover_ratio": 18.8,
+      "last_touch_time": null,
+      "open_times": 20,
+      "up_stat": "1/2",
+      "limit_times": null,
+      "next_trade_date": "2026-07-23",
+      "next_open": 45.57,
+      "next_pre_close": 44.9,
+      "next_open_premium": 0.01492204899777283,
+      "source_limit_ref": "tushare:limit_list_d#000938.SZ/20260722",
+      "source_trigger_daily_ref": "tushare:daily#000938.SZ/20260722",
+      "source_next_daily_ref": "tushare:daily#000938.SZ/20260723",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4717.2442,
+          "pct_chg": -0.004639
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3867.0336,
+          "pct_chg": 0.0006900000000000001
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7158.7622,
+          "pct_chg": -0.013926000000000001
+        }
+      },
+      "index_hs300_pct_chg": -0.004639,
+      "index_sse_pct_chg": 0.0006900000000000001,
+      "index_csi1000_pct_chg": -0.013926000000000001
+    },
+    {
+      "trigger_date": "2026-07-22",
+      "ts_code": "000063.SZ",
+      "name": "中兴通讯",
+      "industry": "通信设备",
+      "limit_status": "炸板",
+      "first_touch_time": "11:20:24",
+      "first_touch_seconds": 40824,
+      "touch_rank": 3,
+      "touch_rank_label": "第3个",
+      "daily_candidate_count": 3,
+      "turnover_yuan": 17989046784,
+      "turnover_yi": 179.89046784,
+      "daily_turnover_yuan": 17989046832.3,
+      "turnover_source_delta_yuan": -48.29999923706055,
+      "turnover_check_pass": true,
+      "trigger_close": 37.5,
+      "trigger_pct_chg": 7.51,
+      "turnover_ratio": 11.98,
+      "last_touch_time": null,
+      "open_times": 1,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-07-23",
+      "next_open": 37.01,
+      "next_pre_close": 37.5,
+      "next_open_premium": -0.013066666666666671,
+      "source_limit_ref": "tushare:limit_list_d#000063.SZ/20260722",
+      "source_trigger_daily_ref": "tushare:daily#000063.SZ/20260722",
+      "source_next_daily_ref": "tushare:daily#000063.SZ/20260723",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4717.2442,
+          "pct_chg": -0.004639
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3867.0336,
+          "pct_chg": 0.0006900000000000001
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7158.7622,
+          "pct_chg": -0.013926000000000001
+        }
+      },
+      "index_hs300_pct_chg": -0.004639,
+      "index_sse_pct_chg": 0.0006900000000000001,
+      "index_csi1000_pct_chg": -0.013926000000000001
     }
   ]
 }

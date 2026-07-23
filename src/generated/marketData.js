@@ -2,10 +2,10 @@ export const dataMetadata = {
   "schema": "market-trace-v2",
   "timezone": "Asia/Shanghai",
   "dataStart": "2026-01-01",
-  "triggerEnd": "2026-07-21",
-  "updatedAt": "2026-07-22",
-  "recordCount": 231,
-  "tradeDayCount": 90,
+  "triggerEnd": "2026-07-22",
+  "updatedAt": "2026-07-23",
+  "recordCount": 234,
+  "tradeDayCount": 91,
   "thresholdYuan": 10000000000,
   "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
   "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -2558,5 +2558,38 @@ export const samples = [
     "r": 9,
     "a": 209,
     "p": -0.008147
+  },
+  {
+    "d": "2026-07-22",
+    "c": "002156.SZ",
+    "n": "通富微电",
+    "s": "炸板",
+    "t": "09:37:42",
+    "x": 34662,
+    "r": 1,
+    "a": 186.4,
+    "p": 0.014553
+  },
+  {
+    "d": "2026-07-22",
+    "c": "000938.SZ",
+    "n": "紫光股份",
+    "s": "炸板",
+    "t": "09:48:48",
+    "x": 35328,
+    "r": 2,
+    "a": 241.5,
+    "p": 0.014922
+  },
+  {
+    "d": "2026-07-22",
+    "c": "000063.SZ",
+    "n": "中兴通讯",
+    "s": "炸板",
+    "t": "11:20:24",
+    "x": 40824,
+    "r": 3,
+    "a": 179.9,
+    "p": -0.013067
   }
 ];
