@@ -2,10 +2,10 @@ export const dataMetadata = {
   "schema": "market-trace-v2",
   "timezone": "Asia/Shanghai",
   "dataStart": "2026-01-01",
-  "triggerEnd": "2026-07-23",
-  "updatedAt": "2026-07-24",
-  "recordCount": 234,
-  "tradeDayCount": 91,
+  "triggerEnd": "2026-07-24",
+  "updatedAt": "2026-07-27",
+  "recordCount": 235,
+  "tradeDayCount": 92,
   "thresholdYuan": 10000000000,
   "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
   "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -2591,5 +2591,16 @@ export const samples = [
     "r": 3,
     "a": 179.9,
     "p": -0.013067
+  },
+  {
+    "d": "2026-07-24",
+    "c": "002156.SZ",
+    "n": "通富微电",
+    "s": "炸板",
+    "t": "10:08:03",
+    "x": 36483,
+    "r": 1,
+    "a": 198.2,
+    "p": -0.049061
   }
 ];

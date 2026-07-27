@@ -3,10 +3,10 @@
     "schema": "market-trace-v2",
     "timezone": "Asia/Shanghai",
     "dataStart": "2026-01-01",
-    "triggerEnd": "2026-07-23",
-    "updatedAt": "2026-07-24",
-    "recordCount": 234,
-    "tradeDayCount": 91,
+    "triggerEnd": "2026-07-24",
+    "updatedAt": "2026-07-27",
+    "recordCount": 235,
+    "tradeDayCount": 92,
     "thresholdYuan": 10000000000,
     "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
     "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -11951,6 +11951,57 @@
       "index_hs300_pct_chg": -0.004639,
       "index_sse_pct_chg": 0.0006900000000000001,
       "index_csi1000_pct_chg": -0.013926000000000001
+    },
+    {
+      "trigger_date": "2026-07-24",
+      "ts_code": "002156.SZ",
+      "name": "通富微电",
+      "industry": "半导体",
+      "limit_status": "炸板",
+      "first_touch_time": "10:08:03",
+      "first_touch_seconds": 36483,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 1,
+      "turnover_yuan": 19817875712,
+      "turnover_yi": 198.17875712,
+      "daily_turnover_yuan": 19817875817.699997,
+      "turnover_source_delta_yuan": -105.69999694824219,
+      "turnover_check_pass": true,
+      "trigger_close": 76.64,
+      "trigger_pct_chg": 9.77,
+      "turnover_ratio": 17.36,
+      "last_touch_time": null,
+      "open_times": 4,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-07-27",
+      "next_open": 72.88,
+      "next_pre_close": 76.64,
+      "next_open_premium": -0.04906054279749483,
+      "source_limit_ref": "tushare:limit_list_d#002156.SZ/20260724",
+      "source_trigger_daily_ref": "tushare:daily#002156.SZ/20260724",
+      "source_next_daily_ref": "tushare:daily#002156.SZ/20260727",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4649.1917,
+          "pct_chg": -0.016669
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3814.1978,
+          "pct_chg": -0.016142
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 6995.6931,
+          "pct_chg": -0.027768
+        }
+      },
+      "index_hs300_pct_chg": -0.016669,
+      "index_sse_pct_chg": -0.016142,
+      "index_csi1000_pct_chg": -0.027768
     }
   ]
 }
