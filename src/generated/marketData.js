@@ -2,10 +2,10 @@ export const dataMetadata = {
   "schema": "market-trace-v2",
   "timezone": "Asia/Shanghai",
   "dataStart": "2026-01-01",
-  "triggerEnd": "2026-07-29",
-  "updatedAt": "2026-07-30",
-  "recordCount": 235,
-  "tradeDayCount": 92,
+  "triggerEnd": "2026-07-30",
+  "updatedAt": "2026-07-31",
+  "recordCount": 237,
+  "tradeDayCount": 93,
   "thresholdYuan": 10000000000,
   "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
   "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -2602,5 +2602,27 @@ export const samples = [
     "r": 1,
     "a": 198.2,
     "p": -0.049061
+  },
+  {
+    "d": "2026-07-30",
+    "c": "001309.SZ",
+    "n": "德明利",
+    "s": "涨停收盘",
+    "t": "13:22:33",
+    "x": 48153,
+    "r": 1,
+    "a": 113.7,
+    "p": 0.09999
+  },
+  {
+    "d": "2026-07-30",
+    "c": "000636.SZ",
+    "n": "风华高科",
+    "s": "炸板",
+    "t": "14:14:30",
+    "x": 51270,
+    "r": 2,
+    "a": 131.6,
+    "p": 0.1
   }
 ];
