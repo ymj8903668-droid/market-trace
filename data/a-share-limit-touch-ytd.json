@@ -3,10 +3,10 @@
     "schema": "market-trace-v2",
     "timezone": "Asia/Shanghai",
     "dataStart": "2026-01-01",
-    "triggerEnd": "2026-07-30",
-    "updatedAt": "2026-07-31",
-    "recordCount": 237,
-    "tradeDayCount": 93,
+    "triggerEnd": "2026-07-31",
+    "updatedAt": "2026-08-03",
+    "recordCount": 243,
+    "tradeDayCount": 94,
     "thresholdYuan": 10000000000,
     "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
     "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -12104,6 +12104,312 @@
       "index_hs300_pct_chg": -0.010987,
       "index_sse_pct_chg": -0.00621,
       "index_csi1000_pct_chg": -0.027416999999999997
+    },
+    {
+      "trigger_date": "2026-07-31",
+      "ts_code": "000636.SZ",
+      "name": "风华高科",
+      "industry": "元件",
+      "limit_status": "炸板",
+      "first_touch_time": "09:25:00",
+      "first_touch_seconds": 33900,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 6,
+      "turnover_yuan": 13582039296,
+      "turnover_yi": 135.82039296,
+      "daily_turnover_yuan": 13582039252.3,
+      "turnover_source_delta_yuan": 43.70000076293945,
+      "turnover_check_pass": true,
+      "trigger_close": 49.35,
+      "trigger_pct_chg": -2.28,
+      "turnover_ratio": 22.1,
+      "last_touch_time": null,
+      "open_times": 3,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-08-03",
+      "next_open": 48,
+      "next_pre_close": 49.35,
+      "next_open_premium": -0.027355623100303927,
+      "source_limit_ref": "tushare:limit_list_d#000636.SZ/20260731",
+      "source_trigger_daily_ref": "tushare:daily#000636.SZ/20260731",
+      "source_next_daily_ref": "tushare:daily#000636.SZ/20260803",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4588.1968,
+          "pct_chg": 0.008457
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3832.2624,
+          "pct_chg": 0.007246
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7075.5065,
+          "pct_chg": 0.025338
+        }
+      },
+      "index_hs300_pct_chg": 0.008457,
+      "index_sse_pct_chg": 0.007246,
+      "index_csi1000_pct_chg": 0.025338
+    },
+    {
+      "trigger_date": "2026-07-31",
+      "ts_code": "001309.SZ",
+      "name": "德明利",
+      "industry": "半导体",
+      "limit_status": "炸板",
+      "first_touch_time": "09:25:00",
+      "first_touch_seconds": 33900,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 6,
+      "turnover_yuan": 17354796800,
+      "turnover_yi": 173.547968,
+      "daily_turnover_yuan": 17354796700,
+      "turnover_source_delta_yuan": 100,
+      "turnover_check_pass": true,
+      "trigger_close": 385.9,
+      "trigger_pct_chg": -1.06,
+      "turnover_ratio": 25.61,
+      "last_touch_time": null,
+      "open_times": 1,
+      "up_stat": "1/2",
+      "limit_times": null,
+      "next_trade_date": "2026-08-03",
+      "next_open": 373.94,
+      "next_pre_close": 385.9,
+      "next_open_premium": -0.03099248509976671,
+      "source_limit_ref": "tushare:limit_list_d#001309.SZ/20260731",
+      "source_trigger_daily_ref": "tushare:daily#001309.SZ/20260731",
+      "source_next_daily_ref": "tushare:daily#001309.SZ/20260803",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4588.1968,
+          "pct_chg": 0.008457
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3832.2624,
+          "pct_chg": 0.007246
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7075.5065,
+          "pct_chg": 0.025338
+        }
+      },
+      "index_hs300_pct_chg": 0.008457,
+      "index_sse_pct_chg": 0.007246,
+      "index_csi1000_pct_chg": 0.025338
+    },
+    {
+      "trigger_date": "2026-07-31",
+      "ts_code": "603986.SH",
+      "name": "兆易创新",
+      "industry": "半导体",
+      "limit_status": "炸板",
+      "first_touch_time": "09:25:01",
+      "first_touch_seconds": 33901,
+      "touch_rank": 2,
+      "touch_rank_label": "第2个",
+      "daily_candidate_count": 6,
+      "turnover_yuan": 34043468800,
+      "turnover_yi": 340.434688,
+      "daily_turnover_yuan": 34043468917.999996,
+      "turnover_source_delta_yuan": -117.99999618530273,
+      "turnover_check_pass": true,
+      "trigger_close": 378.6,
+      "trigger_pct_chg": 2.02,
+      "turnover_ratio": 12.82,
+      "last_touch_time": null,
+      "open_times": 1,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-08-03",
+      "next_open": 365.55,
+      "next_pre_close": 378.6,
+      "next_open_premium": -0.034469096671949306,
+      "source_limit_ref": "tushare:limit_list_d#603986.SH/20260731",
+      "source_trigger_daily_ref": "tushare:daily#603986.SH/20260731",
+      "source_next_daily_ref": "tushare:daily#603986.SH/20260803",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4588.1968,
+          "pct_chg": 0.008457
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3832.2624,
+          "pct_chg": 0.007246
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7075.5065,
+          "pct_chg": 0.025338
+        }
+      },
+      "index_hs300_pct_chg": 0.008457,
+      "index_sse_pct_chg": 0.007246,
+      "index_csi1000_pct_chg": 0.025338
+    },
+    {
+      "trigger_date": "2026-07-31",
+      "ts_code": "688766.SH",
+      "name": "普冉股份",
+      "industry": "半导体",
+      "limit_status": "炸板",
+      "first_touch_time": "09:25:01",
+      "first_touch_seconds": 33901,
+      "touch_rank": 2,
+      "touch_rank_label": "第2个",
+      "daily_candidate_count": 6,
+      "turnover_yuan": 11155271168,
+      "turnover_yi": 111.55271168,
+      "daily_turnover_yuan": 11155271220,
+      "turnover_source_delta_yuan": -52,
+      "turnover_check_pass": true,
+      "trigger_close": 354.9,
+      "trigger_pct_chg": 0.5,
+      "turnover_ratio": 19.1,
+      "last_touch_time": null,
+      "open_times": 1,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-08-03",
+      "next_open": 342.54,
+      "next_pre_close": 354.9,
+      "next_open_premium": -0.034826711749788575,
+      "source_limit_ref": "tushare:limit_list_d#688766.SH/20260731",
+      "source_trigger_daily_ref": "tushare:daily#688766.SH/20260731",
+      "source_next_daily_ref": "tushare:daily#688766.SH/20260803",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4588.1968,
+          "pct_chg": 0.008457
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3832.2624,
+          "pct_chg": 0.007246
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7075.5065,
+          "pct_chg": 0.025338
+        }
+      },
+      "index_hs300_pct_chg": 0.008457,
+      "index_sse_pct_chg": 0.007246,
+      "index_csi1000_pct_chg": 0.025338
+    },
+    {
+      "trigger_date": "2026-07-31",
+      "ts_code": "002384.SZ",
+      "name": "东山精密",
+      "industry": "元件",
+      "limit_status": "炸板",
+      "first_touch_time": "09:46:15",
+      "first_touch_seconds": 35175,
+      "touch_rank": 3,
+      "touch_rank_label": "第3个",
+      "daily_candidate_count": 6,
+      "turnover_yuan": 21468494080,
+      "turnover_yi": 214.6849408,
+      "daily_turnover_yuan": 21468494150,
+      "turnover_source_delta_yuan": -70,
+      "turnover_check_pass": true,
+      "trigger_close": 171.48,
+      "trigger_pct_chg": 5.98,
+      "turnover_ratio": 8.83,
+      "last_touch_time": null,
+      "open_times": 3,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-08-03",
+      "next_open": 165,
+      "next_pre_close": 171.48,
+      "next_open_premium": -0.03778866340097964,
+      "source_limit_ref": "tushare:limit_list_d#002384.SZ/20260731",
+      "source_trigger_daily_ref": "tushare:daily#002384.SZ/20260731",
+      "source_next_daily_ref": "tushare:daily#002384.SZ/20260803",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4588.1968,
+          "pct_chg": 0.008457
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3832.2624,
+          "pct_chg": 0.007246
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7075.5065,
+          "pct_chg": 0.025338
+        }
+      },
+      "index_hs300_pct_chg": 0.008457,
+      "index_sse_pct_chg": 0.007246,
+      "index_csi1000_pct_chg": 0.025338
+    },
+    {
+      "trigger_date": "2026-07-31",
+      "ts_code": "600176.SH",
+      "name": "中国巨石",
+      "industry": "玻璃玻纤",
+      "limit_status": "炸板",
+      "first_touch_time": "09:51:25",
+      "first_touch_seconds": 35485,
+      "touch_rank": 4,
+      "touch_rank_label": "第4个",
+      "daily_candidate_count": 6,
+      "turnover_yuan": 15803478784,
+      "turnover_yi": 158.03478784,
+      "daily_turnover_yuan": 15803478685,
+      "turnover_source_delta_yuan": 99,
+      "turnover_check_pass": true,
+      "trigger_close": 37.84,
+      "trigger_pct_chg": 3.3,
+      "turnover_ratio": 10.15,
+      "last_touch_time": null,
+      "open_times": 2,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-08-03",
+      "next_open": 36.89,
+      "next_pre_close": 37.84,
+      "next_open_premium": -0.025105708245243163,
+      "source_limit_ref": "tushare:limit_list_d#600176.SH/20260731",
+      "source_trigger_daily_ref": "tushare:daily#600176.SH/20260731",
+      "source_next_daily_ref": "tushare:daily#600176.SH/20260803",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4588.1968,
+          "pct_chg": 0.008457
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3832.2624,
+          "pct_chg": 0.007246
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7075.5065,
+          "pct_chg": 0.025338
+        }
+      },
+      "index_hs300_pct_chg": 0.008457,
+      "index_sse_pct_chg": 0.007246,
+      "index_csi1000_pct_chg": 0.025338
     }
   ]
 }
