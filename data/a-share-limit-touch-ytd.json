@@ -3,10 +3,10 @@
     "schema": "market-trace-v2",
     "timezone": "Asia/Shanghai",
     "dataStart": "2026-01-01",
-    "triggerEnd": "2026-08-03",
-    "updatedAt": "2026-08-04",
-    "recordCount": 243,
-    "tradeDayCount": 94,
+    "triggerEnd": "2026-08-04",
+    "updatedAt": "2026-08-05",
+    "recordCount": 245,
+    "tradeDayCount": 95,
     "thresholdYuan": 10000000000,
     "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
     "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -12410,6 +12410,108 @@
       "index_hs300_pct_chg": 0.008457,
       "index_sse_pct_chg": 0.007246,
       "index_csi1000_pct_chg": 0.025338
+    },
+    {
+      "trigger_date": "2026-08-04",
+      "ts_code": "603259.SH",
+      "name": "药明康德",
+      "industry": "医疗服务",
+      "limit_status": "涨停收盘",
+      "first_touch_time": "09:34:15",
+      "first_touch_seconds": 34455,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 2,
+      "turnover_yuan": 10502735104,
+      "turnover_yi": 105.02735104,
+      "daily_turnover_yuan": 10502734978,
+      "turnover_source_delta_yuan": 126,
+      "turnover_check_pass": true,
+      "trigger_close": 141.35,
+      "trigger_pct_chg": 10,
+      "turnover_ratio": 3.02,
+      "last_touch_time": "09:51:42",
+      "open_times": 6,
+      "up_stat": "1/1",
+      "limit_times": 1,
+      "next_trade_date": "2026-08-05",
+      "next_open": 143.96,
+      "next_pre_close": 141.35,
+      "next_open_premium": 0.018464803678811537,
+      "source_limit_ref": "tushare:limit_list_d#603259.SH/20260804",
+      "source_trigger_daily_ref": "tushare:daily#603259.SH/20260804",
+      "source_next_daily_ref": "tushare:daily#603259.SH/20260805",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4600.9304,
+          "pct_chg": 0.012712000000000001
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3822.2846,
+          "pct_chg": 0.003313
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7279.1927,
+          "pct_chg": 0.028167
+        }
+      },
+      "index_hs300_pct_chg": 0.012712000000000001,
+      "index_sse_pct_chg": 0.003313,
+      "index_csi1000_pct_chg": 0.028167
+    },
+    {
+      "trigger_date": "2026-08-04",
+      "ts_code": "002384.SZ",
+      "name": "东山精密",
+      "industry": "元件",
+      "limit_status": "涨停收盘",
+      "first_touch_time": "09:50:30",
+      "first_touch_seconds": 35430,
+      "touch_rank": 2,
+      "touch_rank_label": "第2个",
+      "daily_candidate_count": 2,
+      "turnover_yuan": 15329027584,
+      "turnover_yi": 153.29027584,
+      "daily_turnover_yuan": 15329027514.599998,
+      "turnover_source_delta_yuan": 69.4000015258789,
+      "turnover_check_pass": true,
+      "trigger_close": 179.09,
+      "trigger_pct_chg": 10,
+      "turnover_ratio": 6.26,
+      "last_touch_time": "11:06:54",
+      "open_times": 7,
+      "up_stat": "1/1",
+      "limit_times": 1,
+      "next_trade_date": "2026-08-05",
+      "next_open": 162,
+      "next_pre_close": 179.09,
+      "next_open_premium": -0.09542688033949409,
+      "source_limit_ref": "tushare:limit_list_d#002384.SZ/20260804",
+      "source_trigger_daily_ref": "tushare:daily#002384.SZ/20260804",
+      "source_next_daily_ref": "tushare:daily#002384.SZ/20260805",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4600.9304,
+          "pct_chg": 0.012712000000000001
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3822.2846,
+          "pct_chg": 0.003313
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7279.1927,
+          "pct_chg": 0.028167
+        }
+      },
+      "index_hs300_pct_chg": 0.012712000000000001,
+      "index_sse_pct_chg": 0.003313,
+      "index_csi1000_pct_chg": 0.028167
     }
   ]
 }

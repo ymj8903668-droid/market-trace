@@ -2,10 +2,10 @@ export const dataMetadata = {
   "schema": "market-trace-v2",
   "timezone": "Asia/Shanghai",
   "dataStart": "2026-01-01",
-  "triggerEnd": "2026-08-03",
-  "updatedAt": "2026-08-04",
-  "recordCount": 243,
-  "tradeDayCount": 94,
+  "triggerEnd": "2026-08-04",
+  "updatedAt": "2026-08-05",
+  "recordCount": 245,
+  "tradeDayCount": 95,
   "thresholdYuan": 10000000000,
   "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
   "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -2690,5 +2690,27 @@ export const samples = [
     "r": 4,
     "a": 158,
     "p": -0.025106
+  },
+  {
+    "d": "2026-08-04",
+    "c": "603259.SH",
+    "n": "药明康德",
+    "s": "涨停收盘",
+    "t": "09:34:15",
+    "x": 34455,
+    "r": 1,
+    "a": 105,
+    "p": 0.018465
+  },
+  {
+    "d": "2026-08-04",
+    "c": "002384.SZ",
+    "n": "东山精密",
+    "s": "涨停收盘",
+    "t": "09:50:30",
+    "x": 35430,
+    "r": 2,
+    "a": 153.3,
+    "p": -0.095427
   }
 ];
