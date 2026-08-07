@@ -3,10 +3,10 @@
     "schema": "market-trace-v2",
     "timezone": "Asia/Shanghai",
     "dataStart": "2026-01-01",
-    "triggerEnd": "2026-08-05",
-    "updatedAt": "2026-08-06",
-    "recordCount": 251,
-    "tradeDayCount": 96,
+    "triggerEnd": "2026-08-06",
+    "updatedAt": "2026-08-07",
+    "recordCount": 253,
+    "tradeDayCount": 97,
     "thresholdYuan": 10000000000,
     "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
     "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -12818,6 +12818,108 @@
       "index_hs300_pct_chg": 0.012438,
       "index_sse_pct_chg": 0.014689,
       "index_csi1000_pct_chg": 0.029379
+    },
+    {
+      "trigger_date": "2026-08-06",
+      "ts_code": "000657.SZ",
+      "name": "中钨高新",
+      "industry": "小金属",
+      "limit_status": "炸板",
+      "first_touch_time": "10:28:51",
+      "first_touch_seconds": 37731,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 2,
+      "turnover_yuan": 10522454784,
+      "turnover_yi": 105.22454784,
+      "daily_turnover_yuan": 10522454712,
+      "turnover_source_delta_yuan": 72,
+      "turnover_check_pass": true,
+      "trigger_close": 62.5,
+      "trigger_pct_chg": 8.83,
+      "turnover_ratio": 11.8,
+      "last_touch_time": null,
+      "open_times": 4,
+      "up_stat": "1/2",
+      "limit_times": null,
+      "next_trade_date": "2026-08-07",
+      "next_open": 62.47,
+      "next_pre_close": 62.5,
+      "next_open_premium": -0.00048000000000003595,
+      "source_limit_ref": "tushare:limit_list_d#000657.SZ/20260806",
+      "source_trigger_daily_ref": "tushare:daily#000657.SZ/20260806",
+      "source_next_daily_ref": "tushare:daily#000657.SZ/20260807",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4651.3098,
+          "pct_chg": -0.001469
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3900.3523,
+          "pct_chg": 0.005652000000000001
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7530.4251,
+          "pct_chg": 0.004988
+        }
+      },
+      "index_hs300_pct_chg": -0.001469,
+      "index_sse_pct_chg": 0.005652000000000001,
+      "index_csi1000_pct_chg": 0.004988
+    },
+    {
+      "trigger_date": "2026-08-06",
+      "ts_code": "600584.SH",
+      "name": "长电科技",
+      "industry": "半导体",
+      "limit_status": "涨停收盘",
+      "first_touch_time": "10:48:14",
+      "first_touch_seconds": 38894,
+      "touch_rank": 2,
+      "touch_rank_label": "第2个",
+      "daily_candidate_count": 2,
+      "turnover_yuan": 17259959808,
+      "turnover_yi": 172.59959808,
+      "daily_turnover_yuan": 17259959743,
+      "turnover_source_delta_yuan": 65,
+      "turnover_check_pass": true,
+      "trigger_close": 75.87,
+      "trigger_pct_chg": 10,
+      "turnover_ratio": 13.18,
+      "last_touch_time": "14:54:17",
+      "open_times": 1,
+      "up_stat": "1/1",
+      "limit_times": 1,
+      "next_trade_date": "2026-08-07",
+      "next_open": 75.15,
+      "next_pre_close": 75.87,
+      "next_open_premium": -0.009489916963226541,
+      "source_limit_ref": "tushare:limit_list_d#600584.SH/20260806",
+      "source_trigger_daily_ref": "tushare:daily#600584.SH/20260806",
+      "source_next_daily_ref": "tushare:daily#600584.SH/20260807",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4651.3098,
+          "pct_chg": -0.001469
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3900.3523,
+          "pct_chg": 0.005652000000000001
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7530.4251,
+          "pct_chg": 0.004988
+        }
+      },
+      "index_hs300_pct_chg": -0.001469,
+      "index_sse_pct_chg": 0.005652000000000001,
+      "index_csi1000_pct_chg": 0.004988
     }
   ]
 }

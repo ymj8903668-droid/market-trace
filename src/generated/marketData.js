@@ -2,10 +2,10 @@ export const dataMetadata = {
   "schema": "market-trace-v2",
   "timezone": "Asia/Shanghai",
   "dataStart": "2026-01-01",
-  "triggerEnd": "2026-08-05",
-  "updatedAt": "2026-08-06",
-  "recordCount": 251,
-  "tradeDayCount": 96,
+  "triggerEnd": "2026-08-06",
+  "updatedAt": "2026-08-07",
+  "recordCount": 253,
+  "tradeDayCount": 97,
   "thresholdYuan": 10000000000,
   "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
   "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -2778,5 +2778,27 @@ export const samples = [
     "r": 6,
     "a": 105.8,
     "p": -0.022722
+  },
+  {
+    "d": "2026-08-06",
+    "c": "000657.SZ",
+    "n": "中钨高新",
+    "s": "炸板",
+    "t": "10:28:51",
+    "x": 37731,
+    "r": 1,
+    "a": 105.2,
+    "p": -0.00048
+  },
+  {
+    "d": "2026-08-06",
+    "c": "600584.SH",
+    "n": "长电科技",
+    "s": "涨停收盘",
+    "t": "10:48:14",
+    "x": 38894,
+    "r": 2,
+    "a": 172.6,
+    "p": -0.00949
   }
 ];
