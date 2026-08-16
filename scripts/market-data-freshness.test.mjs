@@ -39,8 +39,13 @@ test("freshness check fails when the committed site data is behind the latest op
 
 test("freshness helpers reject missing market dates", () => {
   assert.throws(() => latestOpenDate([], "20260817"), /No completed open date/);
+  assert.throws(() => latestOpenDate(["20260230"], "20260817"), /No completed open date/);
   assert.throws(
     () => evaluateMarketDataFreshness({ actualUpdatedAt: "", expectedUpdatedAt: "2026-08-17" }),
+    /Invalid actualUpdatedAt/,
+  );
+  assert.throws(
+    () => evaluateMarketDataFreshness({ actualUpdatedAt: "2026-02-30", expectedUpdatedAt: "2026-08-17" }),
     /Invalid actualUpdatedAt/,
   );
 });
