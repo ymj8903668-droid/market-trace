@@ -37,6 +37,14 @@ TUSHARE_TOKEN=*** npm run data:update
 
 GitHub Actions 在工作日北京时间 18:35 自动运行 `.github/workflows/update-market-data.yml`。流程会依次拉取数据、交叉校验成交额、运行测试和依赖审计、构建网站；只有数据发生变化时才提交生成文件并部署 GitHub Pages。自动化使用仓库 Actions Secret `TUSHARE_TOKEN`。
 
+## 自动更新与告警
+
+- **更新失败告警：**主更新任务无论在哪个质量门禁失败，都会创建或更新 `🚨 Market Trace 自动更新失败` Issue，并指派给仓库所有者；恢复后自动关闭。
+- **独立断更巡检：**工作日北京时间 21:30 运行 `.github/workflows/monitor-market-data.yml`，通过上交所交易日历核对仓库中的 `updatedAt`。节假日沿用最近开市日，不会仅按自然日误报。
+- **断更告警：**巡检发现数据落后时，创建或更新独立的 `🚨 Market Trace 数据断更` Issue；恢复后自动关闭。Issue 指派和 @ 提及会按 GitHub 账号的通知设置发送邮件。
+
+收到告警后，依次检查 Actions 运行记录中的 `Refresh audited market data`、`Audit dependencies`、`Commit refreshed data` 和 `Deploy to GitHub Pages`。不要跳过安全审计；依赖漏洞应更新锁文件并通过完整测试后再恢复发布。
+
 ## 数据口径
 
 - 样本：Tushare 涨停/炸板明细中的 U（涨停收盘）与 Z（炸板）。

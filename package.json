@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "data:check": "node scripts/check-market-data-freshness.mjs",
     "data:update": "node scripts/update-market-data.mjs",
     "dev": "vite",
     "build": "vite build",
