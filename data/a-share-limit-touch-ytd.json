@@ -3,10 +3,10 @@
     "schema": "market-trace-v2",
     "timezone": "Asia/Shanghai",
     "dataStart": "2026-01-01",
-    "triggerEnd": "2026-08-13",
-    "updatedAt": "2026-08-14",
-    "recordCount": 260,
-    "tradeDayCount": 100,
+    "triggerEnd": "2026-08-14",
+    "updatedAt": "2026-08-17",
+    "recordCount": 261,
+    "tradeDayCount": 101,
     "thresholdYuan": 10000000000,
     "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
     "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -13277,6 +13277,57 @@
       "index_hs300_pct_chg": -0.005748,
       "index_sse_pct_chg": -0.004994,
       "index_csi1000_pct_chg": -0.009985
+    },
+    {
+      "trigger_date": "2026-08-14",
+      "ts_code": "600487.SH",
+      "name": "亨通光电",
+      "industry": "通信设备",
+      "limit_status": "涨停收盘",
+      "first_touch_time": "13:59:06",
+      "first_touch_seconds": 50346,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 1,
+      "turnover_yuan": 19196727552,
+      "turnover_yi": 191.96727552,
+      "daily_turnover_yuan": 19196727611,
+      "turnover_source_delta_yuan": -59,
+      "turnover_check_pass": true,
+      "trigger_close": 62.98,
+      "trigger_pct_chg": 10.01,
+      "turnover_ratio": 12.97,
+      "last_touch_time": "14:49:09",
+      "open_times": 1,
+      "up_stat": "1/1",
+      "limit_times": 1,
+      "next_trade_date": "2026-08-17",
+      "next_open": 63.8,
+      "next_pre_close": 62.98,
+      "next_open_premium": 0.01302000635122269,
+      "source_limit_ref": "tushare:limit_list_d#600487.SH/20260814",
+      "source_trigger_daily_ref": "tushare:daily#600487.SH/20260814",
+      "source_next_daily_ref": "tushare:daily#600487.SH/20260817",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4665.8812,
+          "pct_chg": 0.000414
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3927.1764,
+          "pct_chg": 0.000054000000000000005
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7769.8204,
+          "pct_chg": 0.0069889999999999996
+        }
+      },
+      "index_hs300_pct_chg": 0.000414,
+      "index_sse_pct_chg": 0.000054000000000000005,
+      "index_csi1000_pct_chg": 0.0069889999999999996
     }
   ]
 }

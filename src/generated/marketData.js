@@ -2,10 +2,10 @@ export const dataMetadata = {
   "schema": "market-trace-v2",
   "timezone": "Asia/Shanghai",
   "dataStart": "2026-01-01",
-  "triggerEnd": "2026-08-13",
-  "updatedAt": "2026-08-14",
-  "recordCount": 260,
-  "tradeDayCount": 100,
+  "triggerEnd": "2026-08-14",
+  "updatedAt": "2026-08-17",
+  "recordCount": 261,
+  "tradeDayCount": 101,
   "thresholdYuan": 10000000000,
   "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
   "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -2877,5 +2877,16 @@ export const samples = [
     "r": 2,
     "a": 119.5,
     "p": 0.001762
+  },
+  {
+    "d": "2026-08-14",
+    "c": "600487.SH",
+    "n": "亨通光电",
+    "s": "涨停收盘",
+    "t": "13:59:06",
+    "x": 50346,
+    "r": 1,
+    "a": 192,
+    "p": 0.01302
   }
 ];
