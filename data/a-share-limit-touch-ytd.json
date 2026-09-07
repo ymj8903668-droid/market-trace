@@ -3,10 +3,10 @@
     "schema": "market-trace-v2",
     "timezone": "Asia/Shanghai",
     "dataStart": "2026-01-01",
-    "triggerEnd": "2026-09-03",
-    "updatedAt": "2026-09-04",
-    "recordCount": 262,
-    "tradeDayCount": 102,
+    "triggerEnd": "2026-09-04",
+    "updatedAt": "2026-09-07",
+    "recordCount": 263,
+    "tradeDayCount": 103,
     "thresholdYuan": 10000000000,
     "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
     "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -13379,6 +13379,57 @@
       "index_hs300_pct_chg": 0.008601,
       "index_sse_pct_chg": 0.011257999999999999,
       "index_csi1000_pct_chg": 0.024954999999999998
+    },
+    {
+      "trigger_date": "2026-09-04",
+      "ts_code": "600150.SH",
+      "name": "中国船舶",
+      "industry": "航海装备",
+      "limit_status": "炸板",
+      "first_touch_time": "13:59:15",
+      "first_touch_seconds": 50355,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 1,
+      "turnover_yuan": 12392923904,
+      "turnover_yi": 123.92923904,
+      "daily_turnover_yuan": 12392923871,
+      "turnover_source_delta_yuan": 33,
+      "turnover_check_pass": true,
+      "trigger_close": 37.47,
+      "trigger_pct_chg": 9.18,
+      "turnover_ratio": 4.49,
+      "last_touch_time": null,
+      "open_times": 7,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-09-07",
+      "next_open": 37.74,
+      "next_pre_close": 37.47,
+      "next_open_premium": 0.007205764611689425,
+      "source_limit_ref": "tushare:limit_list_d#600150.SH/20260904",
+      "source_trigger_daily_ref": "tushare:daily#600150.SH/20260904",
+      "source_next_daily_ref": "tushare:daily#600150.SH/20260907",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4548.0499,
+          "pct_chg": -0.000995
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3930.1164,
+          "pct_chg": -0.003037
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7508.0918,
+          "pct_chg": -0.012105999999999999
+        }
+      },
+      "index_hs300_pct_chg": -0.000995,
+      "index_sse_pct_chg": -0.003037,
+      "index_csi1000_pct_chg": -0.012105999999999999
     }
   ]
 }

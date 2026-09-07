@@ -2,10 +2,10 @@ export const dataMetadata = {
   "schema": "market-trace-v2",
   "timezone": "Asia/Shanghai",
   "dataStart": "2026-01-01",
-  "triggerEnd": "2026-09-03",
-  "updatedAt": "2026-09-04",
-  "recordCount": 262,
-  "tradeDayCount": 102,
+  "triggerEnd": "2026-09-04",
+  "updatedAt": "2026-09-07",
+  "recordCount": 263,
+  "tradeDayCount": 103,
   "thresholdYuan": 10000000000,
   "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
   "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -2899,5 +2899,16 @@ export const samples = [
     "r": 1,
     "a": 143.1,
     "p": -0.00681
+  },
+  {
+    "d": "2026-09-04",
+    "c": "600150.SH",
+    "n": "中国船舶",
+    "s": "炸板",
+    "t": "13:59:15",
+    "x": 50355,
+    "r": 1,
+    "a": 123.9,
+    "p": 0.007206
   }
 ];
