@@ -221,7 +221,19 @@ const incompleteRows = records.filter((row) => (
   || !Number.isFinite(row.touch_rank)
 ));
 if (incompleteRows.length) {
-  throw new Error(`Refusing to publish ${incompleteRows.length} incomplete or unverified rows`);
+  const detail = incompleteRows.slice(0, 8).map((row) => ({
+    ts_code: row.ts_code,
+    name: row.name,
+    trigger_date: row.trigger_date,
+    turnover_check_pass: row.turnover_check_pass,
+    next_trade_date: row.next_trade_date,
+    next_open: row.next_open,
+    next_open_premium: row.next_open_premium,
+    touch_rank: row.touch_rank,
+  }));
+  throw new Error(
+    `Refusing to publish ${incompleteRows.length} incomplete or unverified rows: ${JSON.stringify(detail)}`,
+  );
 }
 
 const metadata = {
