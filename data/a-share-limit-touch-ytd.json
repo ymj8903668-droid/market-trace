@@ -3,10 +3,10 @@
     "schema": "market-trace-v2",
     "timezone": "Asia/Shanghai",
     "dataStart": "2026-01-01",
-    "triggerEnd": "2026-09-07",
-    "updatedAt": "2026-09-08",
-    "recordCount": 263,
-    "tradeDayCount": 103,
+    "triggerEnd": "2026-09-08",
+    "updatedAt": "2026-09-09",
+    "recordCount": 265,
+    "tradeDayCount": 104,
     "thresholdYuan": 10000000000,
     "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
     "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -13430,6 +13430,108 @@
       "index_hs300_pct_chg": -0.000995,
       "index_sse_pct_chg": -0.003037,
       "index_csi1000_pct_chg": -0.012105999999999999
+    },
+    {
+      "trigger_date": "2026-09-08",
+      "ts_code": "002436.SZ",
+      "name": "兴森科技",
+      "industry": "元件",
+      "limit_status": "炸板",
+      "first_touch_time": "09:35:18",
+      "first_touch_seconds": 34518,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 2,
+      "turnover_yuan": 11411550976,
+      "turnover_yi": 114.11550976,
+      "daily_turnover_yuan": 11411550850.6,
+      "turnover_source_delta_yuan": 125.39999961853027,
+      "turnover_check_pass": true,
+      "trigger_close": 40.12,
+      "trigger_pct_chg": 9.17,
+      "turnover_ratio": 18.75,
+      "last_touch_time": null,
+      "open_times": 18,
+      "up_stat": "1/2",
+      "limit_times": null,
+      "next_trade_date": "2026-09-09",
+      "next_open": 40.8,
+      "next_pre_close": 40.12,
+      "next_open_premium": 0.016949152542372836,
+      "source_limit_ref": "tushare:limit_list_d#002436.SZ/20260908",
+      "source_trigger_daily_ref": "tushare:daily#002436.SZ/20260908",
+      "source_next_daily_ref": "tushare:daily#002436.SZ/20260909",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4558.7371,
+          "pct_chg": -0.00356
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3940.5509,
+          "pct_chg": 0.001997
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7659.6069,
+          "pct_chg": 0.00265
+        }
+      },
+      "index_hs300_pct_chg": -0.00356,
+      "index_sse_pct_chg": 0.001997,
+      "index_csi1000_pct_chg": 0.00265
+    },
+    {
+      "trigger_date": "2026-09-08",
+      "ts_code": "603083.SH",
+      "name": "XD剑桥科",
+      "industry": "通信设备",
+      "limit_status": "炸板",
+      "first_touch_time": "09:37:31",
+      "first_touch_seconds": 34651,
+      "touch_rank": 2,
+      "touch_rank_label": "第2个",
+      "daily_candidate_count": 2,
+      "turnover_yuan": 10945313536,
+      "turnover_yi": 109.45313536,
+      "daily_turnover_yuan": 10945313612,
+      "turnover_source_delta_yuan": -76,
+      "turnover_check_pass": true,
+      "trigger_close": 222.3,
+      "trigger_pct_chg": 7.33,
+      "turnover_ratio": 17.74,
+      "last_touch_time": null,
+      "open_times": 10,
+      "up_stat": "1/2",
+      "limit_times": null,
+      "next_trade_date": "2026-09-09",
+      "next_open": 228,
+      "next_pre_close": 222.3,
+      "next_open_premium": 0.02564102564102555,
+      "source_limit_ref": "tushare:limit_list_d#603083.SH/20260908",
+      "source_trigger_daily_ref": "tushare:daily#603083.SH/20260908",
+      "source_next_daily_ref": "tushare:daily#603083.SH/20260909",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4558.7371,
+          "pct_chg": -0.00356
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3940.5509,
+          "pct_chg": 0.001997
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7659.6069,
+          "pct_chg": 0.00265
+        }
+      },
+      "index_hs300_pct_chg": -0.00356,
+      "index_sse_pct_chg": 0.001997,
+      "index_csi1000_pct_chg": 0.00265
     }
   ]
 }
