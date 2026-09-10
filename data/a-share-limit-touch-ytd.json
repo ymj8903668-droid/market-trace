@@ -3,10 +3,10 @@
     "schema": "market-trace-v2",
     "timezone": "Asia/Shanghai",
     "dataStart": "2026-01-01",
-    "triggerEnd": "2026-09-08",
-    "updatedAt": "2026-09-09",
-    "recordCount": 265,
-    "tradeDayCount": 104,
+    "triggerEnd": "2026-09-09",
+    "updatedAt": "2026-09-10",
+    "recordCount": 266,
+    "tradeDayCount": 105,
     "thresholdYuan": 10000000000,
     "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
     "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -13532,6 +13532,57 @@
       "index_hs300_pct_chg": -0.00356,
       "index_sse_pct_chg": 0.001997,
       "index_csi1000_pct_chg": 0.00265
+    },
+    {
+      "trigger_date": "2026-09-09",
+      "ts_code": "000988.SZ",
+      "name": "华工科技",
+      "industry": "自动化设",
+      "limit_status": "炸板",
+      "first_touch_time": "09:30:03",
+      "first_touch_seconds": 34203,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 1,
+      "turnover_yuan": 11116401920,
+      "turnover_yi": 111.1640192,
+      "daily_turnover_yuan": 11116402001.3,
+      "turnover_source_delta_yuan": -81.29999923706055,
+      "turnover_check_pass": true,
+      "trigger_close": 108.79,
+      "trigger_pct_chg": 8.22,
+      "turnover_ratio": 10.07,
+      "last_touch_time": null,
+      "open_times": 4,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-09-10",
+      "next_open": 108,
+      "next_pre_close": 108.79,
+      "next_open_premium": -0.007261696847136734,
+      "source_limit_ref": "tushare:limit_list_d#000988.SZ/20260909",
+      "source_trigger_daily_ref": "tushare:daily#000988.SZ/20260909",
+      "source_next_daily_ref": "tushare:daily#000988.SZ/20260910",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 4572.5995,
+          "pct_chg": 0.003041
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3951.5068,
+          "pct_chg": 0.0027800000000000004
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 7648.798,
+          "pct_chg": -0.001411
+        }
+      },
+      "index_hs300_pct_chg": 0.003041,
+      "index_sse_pct_chg": 0.0027800000000000004,
+      "index_csi1000_pct_chg": -0.001411
     }
   ]
 }

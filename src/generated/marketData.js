@@ -2,10 +2,10 @@ export const dataMetadata = {
   "schema": "market-trace-v2",
   "timezone": "Asia/Shanghai",
   "dataStart": "2026-01-01",
-  "triggerEnd": "2026-09-08",
-  "updatedAt": "2026-09-09",
-  "recordCount": 265,
-  "tradeDayCount": 104,
+  "triggerEnd": "2026-09-09",
+  "updatedAt": "2026-09-10",
+  "recordCount": 266,
+  "tradeDayCount": 105,
   "thresholdYuan": 10000000000,
   "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
   "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -2932,5 +2932,16 @@ export const samples = [
     "r": 2,
     "a": 109.5,
     "p": 0.025641
+  },
+  {
+    "d": "2026-09-09",
+    "c": "000988.SZ",
+    "n": "华工科技",
+    "s": "炸板",
+    "t": "09:30:03",
+    "x": 34203,
+    "r": 1,
+    "a": 111.2,
+    "p": -0.007262
   }
 ];
