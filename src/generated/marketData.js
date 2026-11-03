@@ -2,10 +2,10 @@ export const dataMetadata = {
   "schema": "market-trace-v2",
   "timezone": "Asia/Shanghai",
   "dataStart": "2026-01-01",
-  "triggerEnd": "2026-10-30",
-  "updatedAt": "2026-11-02",
-  "recordCount": 266,
-  "tradeDayCount": 105,
+  "triggerEnd": "2026-11-03",
+  "updatedAt": "2026-11-04",
+  "recordCount": 267,
+  "tradeDayCount": 106,
   "thresholdYuan": 10000000000,
   "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
   "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -2943,5 +2943,16 @@ export const samples = [
     "r": 1,
     "a": 111.2,
     "p": -0.007262
+  },
+  {
+    "d": "2026-11-02",
+    "c": "002384.SZ",
+    "n": "东山精密",
+    "s": "炸板",
+    "t": "11:27:06",
+    "x": 41226,
+    "r": 1,
+    "a": 119.3,
+    "p": -0.021258
   }
 ];
