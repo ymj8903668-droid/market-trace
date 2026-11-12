@@ -2,10 +2,10 @@ export const dataMetadata = {
   "schema": "market-trace-v2",
   "timezone": "Asia/Shanghai",
   "dataStart": "2026-01-01",
-  "triggerEnd": "2026-11-10",
-  "updatedAt": "2026-11-11",
-  "recordCount": 267,
-  "tradeDayCount": 106,
+  "triggerEnd": "2026-11-12",
+  "updatedAt": "2026-11-13",
+  "recordCount": 268,
+  "tradeDayCount": 107,
   "thresholdYuan": 10000000000,
   "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
   "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -2954,5 +2954,16 @@ export const samples = [
     "r": 1,
     "a": 119.3,
     "p": -0.021258
+  },
+  {
+    "d": "2026-11-11",
+    "c": "002384.SZ",
+    "n": "东山精密",
+    "s": "涨停收盘",
+    "t": "13:11:39",
+    "x": 47499,
+    "r": 1,
+    "a": 126.5,
+    "p": 0.022159
   }
 ];
