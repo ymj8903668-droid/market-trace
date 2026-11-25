@@ -3,10 +3,10 @@
     "schema": "market-trace-v2",
     "timezone": "Asia/Shanghai",
     "dataStart": "2026-01-01",
-    "triggerEnd": "2026-11-23",
-    "updatedAt": "2026-11-24",
-    "recordCount": 268,
-    "tradeDayCount": 107,
+    "triggerEnd": "2026-11-25",
+    "updatedAt": "2026-11-26",
+    "recordCount": 270,
+    "tradeDayCount": 108,
     "thresholdYuan": 10000000000,
     "premiumDefinition": "次日开盘价 / 次日前收盘价 - 1",
     "rankDefinition": "同日合格样本按首次触板时间升序做密集排名，同秒并列",
@@ -13685,6 +13685,108 @@
       "index_hs300_pct_chg": 0.004089,
       "index_sse_pct_chg": 0.004618,
       "index_csi1000_pct_chg": 0.013709
+    },
+    {
+      "trigger_date": "2026-11-24",
+      "ts_code": "002384.SZ",
+      "name": "东山精密",
+      "industry": "元件",
+      "limit_status": "炸板",
+      "first_touch_time": "09:25:00",
+      "first_touch_seconds": 33900,
+      "touch_rank": 1,
+      "touch_rank_label": "第1个",
+      "daily_candidate_count": 2,
+      "turnover_yuan": 14657866496,
+      "turnover_yi": 146.57866496,
+      "daily_turnover_yuan": 14657866364.94,
+      "turnover_source_delta_yuan": 131.05999946594238,
+      "turnover_check_pass": true,
+      "trigger_close": 72.7,
+      "trigger_pct_chg": 1.72,
+      "turnover_ratio": 13.92,
+      "last_touch_time": null,
+      "open_times": 1,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-11-25",
+      "next_open": 69.8,
+      "next_pre_close": 72.7,
+      "next_open_premium": -0.0398899587345255,
+      "source_limit_ref": "tushare:limit_list_d#002384.SZ/20261124",
+      "source_trigger_daily_ref": "tushare:daily#002384.SZ/20261124",
+      "source_next_daily_ref": "tushare:daily#002384.SZ/20261125",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 3963.8232,
+          "pct_chg": 0.0013969999999999998
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3548.3694,
+          "pct_chg": 0.002662
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 5799.0137,
+          "pct_chg": -0.002289
+        }
+      },
+      "index_hs300_pct_chg": 0.0013969999999999998,
+      "index_sse_pct_chg": 0.002662,
+      "index_csi1000_pct_chg": -0.002289
+    },
+    {
+      "trigger_date": "2026-11-24",
+      "ts_code": "601138.SH",
+      "name": "工业富联",
+      "industry": "消费电子",
+      "limit_status": "炸板",
+      "first_touch_time": "09:35:18",
+      "first_touch_seconds": 34518,
+      "touch_rank": 2,
+      "touch_rank_label": "第2个",
+      "daily_candidate_count": 2,
+      "turnover_yuan": 11708071424,
+      "turnover_yi": 117.08071424,
+      "daily_turnover_yuan": 11708071336,
+      "turnover_source_delta_yuan": 88,
+      "turnover_check_pass": true,
+      "trigger_close": 40.96,
+      "trigger_pct_chg": 6.97,
+      "turnover_ratio": 1.41,
+      "last_touch_time": null,
+      "open_times": 11,
+      "up_stat": "0/0",
+      "limit_times": null,
+      "next_trade_date": "2026-11-25",
+      "next_open": 39.8,
+      "next_pre_close": 40.96,
+      "next_open_premium": -0.02832031250000011,
+      "source_limit_ref": "tushare:limit_list_d#601138.SH/20261124",
+      "source_trigger_daily_ref": "tushare:daily#601138.SH/20261124",
+      "source_next_daily_ref": "tushare:daily#601138.SH/20261125",
+      "market_indices": {
+        "000300.SH": {
+          "name": "沪深300",
+          "close": 3963.8232,
+          "pct_chg": 0.0013969999999999998
+        },
+        "000001.SH": {
+          "name": "上证指数",
+          "close": 3548.3694,
+          "pct_chg": 0.002662
+        },
+        "000852.SH": {
+          "name": "中证1000",
+          "close": 5799.0137,
+          "pct_chg": -0.002289
+        }
+      },
+      "index_hs300_pct_chg": 0.0013969999999999998,
+      "index_sse_pct_chg": 0.002662,
+      "index_csi1000_pct_chg": -0.002289
     }
   ]
 }
